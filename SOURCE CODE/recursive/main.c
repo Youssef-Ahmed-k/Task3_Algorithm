@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 int is_balanced(int* freq) {
     int i;
     int count = 0;
@@ -28,7 +27,6 @@ int longest_balanced_substring_helper(char* s, int start, int end) {
     int len2 = longest_balanced_substring_helper(s, start + 1, end);
     return (len1 > len2) ? len1 : len2; // return the longer of the two balanced substrings
 }
-
 int longest_balanced_substring(char* s) {
     return longest_balanced_substring_helper(s, 0, strlen(s) - 1);
 }

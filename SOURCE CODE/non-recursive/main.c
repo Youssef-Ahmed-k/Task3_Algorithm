@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 int is_balanced(char* substr)
 {
     int count[2] = {0};
@@ -13,7 +12,6 @@ int is_balanced(char* substr)
     }
     return (count[0] == count[1]);
 }
-
 int longest_balanced_substring(char* s)
 {
     int n = strlen(s);
@@ -31,7 +29,6 @@ int longest_balanced_substring(char* s)
     }
     return max_length;
 }
-
 int main()
 {
     printf("this code run by non-recursive\n");
