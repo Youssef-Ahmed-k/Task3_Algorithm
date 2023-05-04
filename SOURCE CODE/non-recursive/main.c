@@ -33,14 +33,10 @@ int main()
 {
     printf("this code run by non-recursive\n");
     printf("---------------------------------------\n");
-    char s1[] = "cabbacc";
-    printf("the longest balanced substring for ( %s ) = %d\n",s1,longest_balanced_substring(s1));  // Expected Output: 4
-
-    char s2[] = "abababa";
-    printf("the longest balanced substring for ( %s ) = %d\n",s2,longest_balanced_substring(s2));  // Expected Output: 6
-
-    char s3[] = "aaaaaaa";
-    printf("the longest balanced substring for ( %s ) = %d\n",s3,longest_balanced_substring(s3));  // Expected Output: 0
-
+    char s[25];
+    printf("please..Enter your string here:");
+    scanf("%s",&s);
+    printf("the longest balanced substring for ( %s ) = %d\n",s,longest_balanced_substring(s));
     return 0;
 }
+
